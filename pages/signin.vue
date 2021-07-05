@@ -1,11 +1,5 @@
 <template>
-  <v-row
-    no-gutters
-    justify="center"
-    align="center"
-    class="pa-4"
-    style="height: 100%"
-  >
+  <CenterPageRow>
     <BaseCard>
       <template #title>
         <span class="unselectable">{{ role }} Sign In</span>
@@ -47,7 +41,7 @@
         </v-btn>
       </template>
     </BaseCard>
-  </v-row>
+  </CenterPageRow>
 </template>
 
 <script>
