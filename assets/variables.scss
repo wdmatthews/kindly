@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+$body-font-family: 'Montserrat', sans-serif;
+$heading-font-family: 'Dosis', sans-serif;
+
+$material-dark: (
+  'background': #212121,
+);
+
+$headings: (
+  'button': (
+    'font-family': $heading-font-family,
+  ),
+);
