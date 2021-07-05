@@ -1,5 +1,6 @@
 <template>
   <v-text-field
+    ref="field"
     label="School Code"
     outlined
     :rules="rules"
@@ -17,11 +18,20 @@ export default {
       type: String,
       default: '',
     },
+    autofocus: {
+      type: Boolean,
+      default: false,
+    },
   },
   data: vm => ({
     rules: [
       required,
     ],
   }),
+  mounted() {
+    if (this.autofocus) {
+      this.$refs.field.focus()
+    }
+  },
 }
 </script>

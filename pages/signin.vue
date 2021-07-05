@@ -8,7 +8,10 @@
         v-model="formIsValid"
         @submit.prevent="signIn"
       >
-        <SchoolCodeField v-model="code" />
+        <SchoolCodeField
+          v-model="code"
+          autofocus
+        />
         <UsernameField v-model="username" />
         <PasswordField v-model="password" />
         <v-row

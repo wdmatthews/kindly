@@ -12,10 +12,14 @@
           type="info"
           dense
           text
+          class="unselectable"
         >
           If you are a student or teacher, please contact your school admin to create an account for you
         </v-alert>
-        <SchoolNameField v-model="name" />
+        <SchoolNameField
+          v-model="name"
+          autofocus
+        />
         <SchoolCodeField v-model="code" />
         <PasswordField v-model="password" />
       </v-form>
