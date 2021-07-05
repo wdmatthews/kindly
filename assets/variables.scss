@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
-
-$body-font-family: 'Montserrat', sans-serif;
-$heading-font-family: 'Dosis', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700&display=swap');
 
 $material-dark: (
   'background': #212121,
 );
+
+$body-font-family: 'Montserrat', sans-serif;
+$heading-font-family: 'Dosis', sans-serif;
 
 $headings: (
   'button': (
     'font-family': $heading-font-family,
   ),
 );
+
+$border-radius-root: 1rem;
+
+$list-item-action-icon-margin: 8px;
+$list-nav-rounded-dense-item-margin-bottom: 8px;
+
+$toolbar-content-padding-x: 0px;
+$toolbar-content-padding-y: 0px;
