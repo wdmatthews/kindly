@@ -3,7 +3,7 @@
     <v-toolbar-title class="ml-4">
       <nuxt-link
         to="/"
-        class="text-decoration-none text-h4 font-weight-bold"
+        class="text-decoration-none text-h4 font-weight-bold unselectable"
       >
         <span class="primary--text">Kind</span><span class="accent--text">ly</span>
       </nuxt-link>
@@ -19,7 +19,7 @@
         v-for="(link, i) in links"
         :key="`link-${i}`"
         plain
-        class="text-button"
+        class="text-button font-weight-bold"
         :to="link.to"
         :color="link.color"
       >
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import links from '~/assets/data/navigation-links.js'
+import links from '~/assets/data/navigation-links'
 
 export default {
   data: vm => ({

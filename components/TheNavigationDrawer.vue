@@ -23,7 +23,7 @@
         </v-list-item-icon>
         <v-list-item-content>
           <v-list-item-title
-            class="text-button"
+            class="text-button font-weight-bold"
             :class="link.color ? `${link.color}--text` : ''"
             v-text="link.text"
           />
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import links from '~/assets/data/navigation-links.js'
+import links from '~/assets/data/navigation-links'
 
 export default {
   data: vm => ({

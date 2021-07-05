@@ -21,7 +21,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
     ],
   },
-  css: [],
+  css: [
+    '~/assets/css/utilities.css',
+  ],
   plugins: [],
   components: true,
   buildModules: [
@@ -42,7 +44,7 @@ export default {
           info: colors.cyan.base,
           success: colors.green.base,
           warning: colors.amber.base,
-          error: colors.red.base,
+          error: colors.red.lighten2,
         },
       },
     },
