@@ -2,7 +2,6 @@
   <v-text-field
     label="Username"
     outlined
-    prepend-icon="mdi-account"
     :rules="rules"
     :value="value"
     @input="$emit('input', $event)"

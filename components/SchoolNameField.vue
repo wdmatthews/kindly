@@ -1,8 +1,7 @@
 <template>
   <v-text-field
-    label="Password"
+    label="School Name"
     outlined
-    type="password"
     :rules="rules"
     :value="value"
     @input="$emit('input', $event)"

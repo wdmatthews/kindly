@@ -8,7 +8,7 @@
         v-model="formIsValid"
         @submit.prevent="signIn"
       >
-        <SchoolField v-model="school" />
+        <SchoolCodeField v-model="code" />
         <UsernameField v-model="username" />
         <PasswordField v-model="password" />
         <v-row
@@ -51,7 +51,7 @@ import capitalize from '~/assets/methods/capitalize'
 export default {
   data: vm => ({
     formIsValid: false,
-    school: '',
+    code: '',
     username: '',
     password: '',
     roles,

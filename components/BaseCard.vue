@@ -1,5 +1,8 @@
 <template>
-  <v-card color="blue-grey darken-4">
+  <v-card
+    color="blue-grey darken-4"
+    :max-width="maxWidth"
+  >
     <v-card-title class="pa-4 text-h4 font-weight-bold">
       <v-spacer />
       <slot name="title" />
@@ -15,3 +18,14 @@
     </v-card-actions>
   </v-card>
 </template>
+
+<script>
+export default {
+  props: {
+    maxWidth: {
+      type: [Number, String],
+      default: undefined,
+    },
+  },
+}
+</script>

@@ -1,8 +1,7 @@
 <template>
   <v-text-field
-    label="School"
+    label="School Code"
     outlined
-    prepend-icon="mdi-school"
     :rules="rules"
     :value="value"
     @input="$emit('input', $event)"
