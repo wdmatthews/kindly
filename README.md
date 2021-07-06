@@ -4,15 +4,13 @@ A sprinkle of kindness in digital education.
 ## Goals
 * Provide a friendly digital learning environment for students to engage in
 * Make students feel they matter, and bring the classroom together
-* Encourage students and set their eyes on a future career
-* Show students how their learning applies to their future career
+* Encourage students to participate and do well in school
 * Let students know how they are and have been doing in their courses
 
 ## Implementation
 ### Profile
-* Personalize the website to fit student needs
 * Let the student pick their nickname when they first log in
-* Allow for students to change their career, or turn off the feature
+* View notifications
 
 ### Dashboard
 * Show students how they are doing in each course at a quick glance

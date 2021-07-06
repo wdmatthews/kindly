@@ -25,8 +25,19 @@
           <v-list-item-title
             class="text-button font-weight-bold"
             :class="link.color ? `${link.color}--text` : ''"
-            v-text="link.text"
-          />
+          >
+            <v-badge
+              v-if="link.text === 'Profile'"
+              color="primary"
+              :content="3"
+              :value="3"
+              inline
+              class="mt-0"
+            >
+              {{ link.text }}
+            </v-badge>
+            <span v-else>{{ link.text }}</span>
+          </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>

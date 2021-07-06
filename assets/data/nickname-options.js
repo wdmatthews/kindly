@@ -1,0 +1,46 @@
+export const adjectives = [
+  'Kind',
+  'Ambitious',
+  'Amiable',
+  'Analytical',
+  'Caring',
+  'Creative',
+  'Curious',
+  'Dedicated',
+  'Generous',
+  'Intuitive',
+  'Inventive',
+  'Remarkable',
+  'Thoughtful',
+]
+
+export const colors = [
+  'Blue',
+  'Green',
+  'Yellow',
+  'Orange',
+  'Red',
+  'Pink',
+  'Purple',
+  'Brown',
+  'Black',
+  'Grey',
+  'White',
+]
+
+export const animals = [
+  'Koala',
+  'Axolotl',
+  'Blue Whale',
+  'Butterfly',
+  'Dolphin',
+  'Gecko',
+  'Lanternfish',
+  'Rabbit',
+  'Rhino',
+  'Spider Crab',
+  'Tree Frog',
+  'Turtle',
+  'Whale Shark',
+  'Wolffish',
+]

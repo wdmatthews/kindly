@@ -26,7 +26,16 @@
         <v-icon left>
           mdi-{{ link.icon }}
         </v-icon>
-        {{ link.text }}
+        <v-badge
+          v-if="link.text === 'Profile'"
+          color="primary"
+          :content="3"
+          :value="3"
+          inline
+        >
+          {{ link.text }}
+        </v-badge>
+        <span v-else>{{ link.text }}</span>
       </v-btn>
     </v-toolbar-items>
   </v-app-bar>

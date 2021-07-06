@@ -6,22 +6,27 @@
       </template>
       <v-form
         v-model="formIsValid"
-        @submit.prevent="signIn"
+        @submit.prevent
       >
-        <v-alert
-          type="info"
-          dense
-          text
-          class="unselectable"
+        <BaseAlert
+          color="info"
+          icon="information"
         >
           If you are a student or teacher, please contact your school admin to create an account for you
-        </v-alert>
+        </BaseAlert>
         <SchoolNameField
           v-model="name"
           autofocus
+          @submit="signUp"
         />
-        <SchoolCodeField v-model="code" />
-        <PasswordField v-model="password" />
+        <SchoolCodeField
+          v-model="code"
+          @submit="signUp"
+        />
+        <PasswordField
+          v-model="password"
+          @submit="signUp"
+        />
       </v-form>
       <template #actions>
         <v-btn
@@ -29,6 +34,7 @@
           outlined
           class="text-button font-weight-bold"
           :disabled="!formIsValid"
+          @click="signUp"
         >
           <v-icon left>
             mdi-account-plus
@@ -51,5 +57,11 @@ export default {
   head: vm => ({
     title: 'Sign Up',
   }),
+  methods: {
+    signUp() {
+      // if (!this.formIsValid) { return }
+      
+    },
+  },
 }
 </script>

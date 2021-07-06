@@ -31,5 +31,8 @@ export default {
   head: vm => ({
     title: 'Sign Out',
   }),
+  mounted() {
+    
+  },
 }
 </script>

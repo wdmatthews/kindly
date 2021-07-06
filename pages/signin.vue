@@ -6,14 +6,21 @@
       </template>
       <v-form
         v-model="formIsValid"
-        @submit.prevent="signIn"
+        @submit.prevent
       >
         <SchoolCodeField
           v-model="code"
           autofocus
+          @submit="signIn"
         />
-        <UsernameField v-model="username" />
-        <PasswordField v-model="password" />
+        <UsernameField
+          v-model="username"
+          @submit="signIn"
+        />
+        <PasswordField
+          v-model="password"
+          @submit="signIn"
+        />
         <v-row
           no-gutters
           justify="center"
@@ -36,6 +43,7 @@
           outlined
           class="text-button font-weight-bold"
           :disabled="!formIsValid"
+          @click="signIn"
         >
           <v-icon left>
             mdi-login-variant
@@ -82,6 +90,12 @@ export default {
       let index = this.roleIndex + 1
       if (index >= this.roles.length) { index = 0 }
       return index
+    },
+  },
+  methods: {
+    signIn() {
+      // if (!this.formIsValid) { return }
+      
     },
   },
 }

@@ -5,6 +5,7 @@
     :rules="rules"
     :value="value"
     @input="$emit('input', $event)"
+    @keyup.enter="$emit('submit')"
   />
 </template>
 
