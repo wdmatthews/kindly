@@ -15,7 +15,6 @@ A sprinkle of kindness in digital education.
 ### Dashboard
 * Show students how they are doing in each course at a quick glance
 * Allow for quick access to important links for their courses
-* See notifications of encouragement and other notices
 
 ### Course Dashboard
 * View grades and trends for the course

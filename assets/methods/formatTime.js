@@ -4,5 +4,10 @@
  * @returns The formatted time.
  */
 export default function (time) {
-  return `${time.getMonth() + 1}/${time.getDate()}/${time.getFullYear()} ${time.getHours()}:${time.getMinutes()}`
+  const month = time.getMonth() + 1
+  const date = time.getDate()
+  const year = time.getFullYear()
+  const hours = time.getHours()
+  const minutes = time.getMinutes()
+  return `${month}/${date}/${year} ${hours}:${minutes < 10 ? '0' : ''}${minutes}`
 }

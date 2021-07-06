@@ -123,6 +123,9 @@ export default {
       },
     ],
   }),
+  head: vm => ({
+    title: 'Profile',
+  }),
   computed: {
     nickname() {
       return this.$refs.nicknameField?.nickname
