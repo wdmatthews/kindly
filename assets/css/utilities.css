@@ -4,3 +4,15 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+.transparent { background: transparent; }
+
+.header-font { font-family: 'Dosis', sans-serif; }
+.body-font { font-family: 'Montserrat', sans-serif; }
+
+.v-list-item__title,
+.v-list-item__subtitle {
+  overflow: unset !important;
+  text-overflow: unset !important;
+  white-space: unset !important;
+}

@@ -47,7 +47,7 @@
 
 <script>
 import required from '~/assets/validation/required.js'
-import { adjectives, colors, animals } from '~/assets/data/nickname-options.js'
+import { adjectives, colors, animals } from '~/assets/data/nicknameOptions.js'
 
 export default {
   data: vm => ({

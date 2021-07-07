@@ -11,54 +11,16 @@
         md="4"
         class="pa-2"
       >
-        <BaseCard>
-          <template #title>
-            <span class="unselectable">{{ course.name }}</span>
-          </template>
-          <v-row
-            no-gutters
-            align="center"
-            class="mb-4 unselectable"
-          >
-            <v-progress-circular
-              class="mr-4"
-              :rotate="-90"
-              :size="128"
-              :width="16"
-              :value="course.completion"
-              :color="getGradeColor(course.grade).name"
-            >
-              <span class="text-h5 font-weight-bold">{{ course.grade.toFixed(2) }}%</span>
-            </v-progress-circular>
-            <v-col>
-              {{ getGradeMessage(course.grade) }}<br>
-              You have completed {{ course.completion.toFixed(2) }}% of the available assignments<br>
-              Your grade is {{ course.grade.toFixed(2) }}%
-            </v-col>
-          </v-row>
-          <template #actions>
-            <v-btn
-              color="primary"
-              outlined
-              class="text-button font-weight-bold"
-              :to="`/course?id=${course.id}`"
-            >
-              <v-icon left>
-                mdi-eye
-              </v-icon>
-              View
-            </v-btn>
-          </template>
-        </BaseCard>
+        <CourseCard
+          view-button
+          :course="course"
+        />
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import getGradeColor from '~/assets/methods/getGradeColor'
-import getGradeMessage from '~/assets/methods/getGradeMessage'
-
 export default {
   data: vm => ({
     courses: [
@@ -97,9 +59,5 @@ export default {
   head: vm => ({
     title: 'Dashboard',
   }),
-  methods: {
-    getGradeColor,
-    getGradeMessage,
-  },
 }
 </script>

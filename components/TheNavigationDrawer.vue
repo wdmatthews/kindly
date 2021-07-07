@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import links from '~/assets/data/navigation-links'
+import links from '~/assets/data/navigationLinks'
 
 export default {
   data: vm => ({
